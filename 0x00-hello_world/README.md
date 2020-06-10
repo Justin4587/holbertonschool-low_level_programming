@@ -1,0 +1,1 @@
+This is a dir containing the tasks for the very basics of learning c. 
