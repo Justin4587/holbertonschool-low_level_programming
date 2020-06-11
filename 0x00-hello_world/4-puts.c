@@ -1,3 +1,8 @@
+
+
+
+#include <stdio.h>
+
 /**
 * main - puts prints text to screen
 *
@@ -6,7 +11,8 @@
 * Return:return 0
 *
 */
-#include <stdio.h>
+
+
 int main(void)
 {
 	puts("\"Programming is like building a multiligual puzzle");
