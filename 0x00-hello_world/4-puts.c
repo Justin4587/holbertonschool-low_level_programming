@@ -4,12 +4,12 @@
 #include <stdio.h>
 
 /**
-* main - puts prints text to screen
-*
-* Description: C program using puts for text output
-*
-* Return:return 0
-*
+ * main - puts prints text to screen
+ *
+ * Description: C program using puts for text output
+ *
+ * Return:return 0
+ *
 */
 
 
