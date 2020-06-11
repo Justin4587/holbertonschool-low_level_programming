@@ -1,7 +1,14 @@
-/*first c file using puts*/
-
+/**
+* main - puts prints text to screen
+*
+* Description: C program using puts for text output
+*
+* Return:return 0
+*
+*/
+#include <stdio.h>
 int main(void)
 {
-	puts("Programming is like building a multiligual puzzle\n");
+	puts("\"Programming is like building a multiligual puzzle\n");
 	return (0);
 }
