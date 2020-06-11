@@ -1,12 +1,13 @@
 #include <stdio.h>
+
 /**
- * description: small pprint function
- * main - print on screen
- * description: simple function
- * return: function 0 
- */
+* main - entry point
+* Return: always 0
+* Description: puts
+*/
+
 int main(void)
 {
-	puts("\"Programming is like building a multiligual puzzle");
+	puts("\"Programming is like building a multilingual puzzle");
 	return (0);
 }
