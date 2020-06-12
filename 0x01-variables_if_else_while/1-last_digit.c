@@ -25,7 +25,7 @@ if (o == 0)
 {
 	printf("and is 0\n");
 	}
-if ((o < 6) && (o != 0))
+if (o < 6 && o != 0)
 {
 	printf("and is less than 6 but not 0\n");
 	}
