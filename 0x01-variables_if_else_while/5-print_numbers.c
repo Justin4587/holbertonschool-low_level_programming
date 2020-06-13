@@ -12,16 +12,16 @@ int main(void)
 	int n;
 
 	n = 0;
-while (n <= 9)
-{
-{
+	while (n <= 9)
+	  {
+	    {
 	      putchar('0' + n);
-}
-if (n == 9)
-{
+	    }
+	    if (n == 9)
+	      {
 		putchar('\n');
-}
+	      }
 	    n = n + 1;
-}
+	  }
 	return (0);
 }
