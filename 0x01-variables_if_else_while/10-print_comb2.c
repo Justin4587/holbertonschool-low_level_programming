@@ -14,23 +14,23 @@ int main(void)
 
 	n = 0;
 while (n <= 99)
-	{
-	  o = n / 10;
-	  p = n % 10;
-	{
-	putchar('0' + o);
-	putchar('0' + p);
-	}
-	if (n != 99)
-	{
-	putchar(',');
-	putchar(' ');
-	}
-	else
-	{
-	putchar('\n');
-	}
-	n = n + 1;
-	}
-	return (0);
+{
+o = n / 10;
+p = n % 10;
+{
+putchar('0' + o);
+putchar('0' + p);
+}
+if (n != 99)
+{
+putchar(',');
+putchar(' ');
+}
+else
+{
+putchar('\n');
+}
+n = n + 1;
+}
+return (0);
 }
