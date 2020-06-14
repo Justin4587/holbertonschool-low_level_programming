@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+/**
+* main - 00 through 99
+* description: print 00 through 99 seperated by a comma
+* Return: I have nothing clever its 0
+*/
+
+int main(void)
+{
+	int n;
+	int o;
+	int p;
+
+	n = 0;
+	while (n <= 99)
+	{
+	  o = n / 10;
+	  p = n % 10;
+	{
+	putchar('0' + o);
+	putchar('0' + p);
+	}
+	if (n != 99)
+	{
+	putchar(',');
+	putchar(' ');
+	}
+	else
+	{
+	putchar('\n');
+	}
+	n = n + 1;
+	}
+	return (0);
+}

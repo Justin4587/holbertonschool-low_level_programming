@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+/**
+* main - putchar z to a
+* description: all lowercase letters in reverse
+* Return: Everything returns to nothing or 0
+*/
+
+int main(void)
+{
+	char m;
+
+	m = 'z';
+	while (m >= 'a')
+	{
+	putchar(m);
+	m = m - 1;
+	}
+	putchar('\n');
+	return (0);
+}
