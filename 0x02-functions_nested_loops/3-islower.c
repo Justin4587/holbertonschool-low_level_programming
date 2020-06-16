@@ -1,8 +1,9 @@
 #include "holberton.h"
 
 /**
-* main - islower
+* _islower - islower detects lower case chars
 * description: prints a value determined by lowercase char
+* @c: int
 * Return: 0
 */
 
