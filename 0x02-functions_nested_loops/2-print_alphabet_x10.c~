@@ -1,0 +1,34 @@
+#include "holberton.h"
+
+/**
+* print_alphabet_x10 - prints lower case
+* description: prints all lower case letters x10
+* Return: 0
+*/
+
+
+void print_alphabet_x10(void)
+{
+
+	char c;
+	int n;
+
+	n = 0;
+
+while (n <= 9)
+{
+c = 'a';
+while (c <= 'z')
+{
+{
+_putchar(c);
+}
+if (c == 'z')
+{
+_putchar('\n');
+}
+c = c + 1;
+n = n + 1;
+}
+}
+}
