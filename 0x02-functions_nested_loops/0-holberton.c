@@ -1,4 +1,4 @@
-#include <header.h>
+#include "holberton.h"
 
 /**
 * main - holberton
@@ -17,5 +17,6 @@ _putchar('r');
 _putchar('t');
 _putchar('o');
 _putchar('n');
+_putchar('\n');
 return (0);
 }
