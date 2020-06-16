@@ -16,6 +16,7 @@ void print_alphabet(void)
 
 while (c <= 'z')
 {
+{
 _putchar(c);
 }
 if (c == 'z')
@@ -23,4 +24,5 @@ if (c == 'z')
 _putchar('\n');
 }
 c = c + 1;
+}
 }
