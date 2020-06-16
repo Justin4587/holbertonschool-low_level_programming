@@ -1,0 +1,1 @@
+This is a README for functions and nested loops project that at the moment I am completley lost on. 
