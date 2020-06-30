@@ -6,7 +6,7 @@
 * @n: number of times to write
 * @s: location to write
 * @b: what to write
-* Return: pointer s 
+* Return: pointer s
 */
 
 char _memset(char *s, char b, unsigned int n)
