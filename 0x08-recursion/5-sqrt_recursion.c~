@@ -1,0 +1,9 @@
+#include "holberton.h"
+
+/**
+* _puts_recursion - print Betty Holberton
+* description: create a function to place chars
+* @c: char variable
+* Return: 0
+*/
+
