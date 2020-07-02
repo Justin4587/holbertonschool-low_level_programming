@@ -1,0 +1,12 @@
+#include "holberton.h"
+
+/**
+* is_prime - finds prime
+* description: div
+* @n: int
+* Return: value
+*/
+
+int is_prime_number(int n)
+{
+if 
