@@ -8,15 +8,6 @@
  */
 int main(void)
 {
-    int r;
-
-    r = factorial(1);
-    printf("%d\n", r);
-    r = factorial(5);
-    printf("%d\n", r);
-    r = factorial(10);
-    printf("%d\n", r);
-    r = factorial(-1024);
-    printf("%d\n", r);
+    _print_rev_recursion("\nColton Walker");
     return (0);
 }
