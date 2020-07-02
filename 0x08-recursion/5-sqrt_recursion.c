@@ -2,7 +2,6 @@
 
 /**
 * _sqrt_recursion - find sqr
-* find_sqrt - return sqrt
 * description: i + i
 * @n: int
 * Return: value
@@ -13,6 +12,13 @@ int _sqrt_recursion(int n)
 int i = 0;
 return (find_sqrt(n, i));
 }
+
+/**
+* find_sqrt - find sqr
+* @i: int
+* @n: int
+* Return: value
+*/
 
 int find_sqrt(int n, int i)
 {
