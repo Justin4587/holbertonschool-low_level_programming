@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
-* is_prime - finds prime
+* is_prime_number - finds prime
 * description: div
 * @n: int
 * Return: value
@@ -10,7 +10,7 @@
 int is_prime_number(int n)
 {
 int i = 2;
-return (find_prime(n,i));
+return (find_prime(n, i));
 }
 
 /**
