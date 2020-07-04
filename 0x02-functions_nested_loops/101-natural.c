@@ -3,7 +3,6 @@
 /**
 * main - numbers
 * description: does some maths
-* @n: int
 * Return: 0
 */
 
