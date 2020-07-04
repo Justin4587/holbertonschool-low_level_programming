@@ -7,11 +7,9 @@
 * Return: last digit
 */
 
-int print_last_digit(r)
+int print_last_digit(int r)
 {
-	int r;
-
-	r = ("% 10", r);
+	r = % 10;
 
 	return (r);
 }
