@@ -3,7 +3,6 @@
 /**
 * jack_bauer - prints clock digits
 * description: each digit from 0:00 to 24:00
-* Return: last digit
 */
 
 void jack_bauer(void)
