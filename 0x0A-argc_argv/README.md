@@ -1,0 +1,1 @@
+This is a readme file for the project tasks covering argv and argc and a few other things. 
