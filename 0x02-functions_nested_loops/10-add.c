@@ -1,8 +1,8 @@
 #include "holberton.h"
 
 /**
-* add - produces sum 
-* description - adds to ints 
+* add - produces sum
+* description - adds to ints
 * @a: int
 * @b: int
 * Return: sum
