@@ -6,11 +6,21 @@
 * description: prints arg
 * @argc: arg counter
 * @argv: arg var
-* Return: number
+* Return: 0
 */
 
-int main(int argc, char **argv __attribute__ ((unused)))
+int main(int argc, char **argv)
 {
-printf("%d\n", argc - 1);
+  int a;
+  int b;
+
+while (argc--)
+  {
+    b = atoi(*argv++);
+    a = a + b;
+  }
+ {
+   printf ("%d\n", a);
+   }
 return (0);
 }

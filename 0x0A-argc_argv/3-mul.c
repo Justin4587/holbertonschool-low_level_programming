@@ -9,20 +9,21 @@
 * Return: 0
 */
 
-int main(int argc, char **argv[])
+int main(int argc, char *argv[])
 {
   int a;
   int b;
   int c;
-  b = &argv[1];
-  c = &argv[2];
 
-  if(argc <= 2 && argc >= 4)
+  if(argc != 3)
     {
-    printf ("Error");
+    printf ("Error\n");
+    return (1);
     }
   else
     {
+      b = atoi(argv[1]);
+  c = atoi(argv[2]);
     a = (b * c);
     printf("%d\n", a);
     }
