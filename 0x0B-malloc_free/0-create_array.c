@@ -23,6 +23,6 @@ while (size != 0)
 {
 p[size - 1] = c;
 size--;
-return (p);
 }
+return (p);
 }
