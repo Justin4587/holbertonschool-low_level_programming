@@ -23,7 +23,7 @@ counter2++;
 {
 cnt = counter2 + counter1;
 }
-if (cnt >= 1 )
+if (cnt >= 1)
 dup = malloc(sizeof(char) * (counter1 + counter2));
 if (dup == NULL)
 return (NULL);
