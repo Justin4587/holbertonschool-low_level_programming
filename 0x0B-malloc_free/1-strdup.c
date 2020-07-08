@@ -18,8 +18,8 @@ return (NULL);
 
 while (str[counter] != '\0')
 counter++;
-
-if (counter >= 1)
+{
+if (counter >= 0)
 dup = malloc((sizeof(char)) * (counter + 1));
 if (dup == NULL)
 return (NULL);
@@ -28,6 +28,7 @@ while (counter >= 0)
 {
 dup[counter] = str[counter];
 counter--;
+}
 }
 return (dup);
 }
