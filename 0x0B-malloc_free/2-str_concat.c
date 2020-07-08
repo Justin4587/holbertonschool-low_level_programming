@@ -26,7 +26,7 @@ return (NULL);
 cnt = counter2 + counter1;
 }
 if (cnt >= 0)
-dup = malloc(sizeof(char) * (counter1 + counter2 + 2));
+dup = malloc(sizeof(char) * (counter1 + counter2 + 1));
 if (dup == NULL)
 return (NULL);
 while (counter2 >= 0)
