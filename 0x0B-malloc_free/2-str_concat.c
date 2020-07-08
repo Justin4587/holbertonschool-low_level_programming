@@ -20,20 +20,22 @@ while (s1[counter1] != '\0')
 counter1++;
 while (s2[counter2] != '\0')
 counter2++;
+if (s1 == NULL || s2 == NULL)
+return (NULL);
 {
 cnt = counter2 + counter1;
 }
-if (cnt >= 1)
-dup = malloc(sizeof(char) * (counter1 + counter2));
+if (cnt >= 0)
+dup = malloc(sizeof(char) * (counter1 + counter2 + 2));
 if (dup == NULL)
 return (NULL);
-while (counter2 != 0)
+while (counter2 >= 0)
 {
 cnt--;
 counter2--;
 dup[cnt] = s2[counter2];
 }
-while (counter1 != 0)
+while (counter1 >= 0)
 {
 counter1--;
 dup[counter1] = s1[counter1];
