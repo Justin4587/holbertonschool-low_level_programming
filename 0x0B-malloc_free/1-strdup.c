@@ -23,6 +23,7 @@ if (counter >= 1)
 dup = malloc((sizeof(char)) * (counter + 1));
 if (dup == NULL)
 return (NULL);
+dup[counter + 1] = '\0';
 while (counter != 0)
 {
 dup[counter] = str[counter];
