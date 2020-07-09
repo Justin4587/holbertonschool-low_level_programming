@@ -29,14 +29,12 @@ count1++;
 while (s2[count2] != '\0')
 count2++;
 
-if (count2 <= n)
-dup = malloc((sizeof(char) * (count1 + count2 + 1));
-if (count2 > n)
 dup = malloc((sizeof(char) * (count1 + n + 1));
 	     
 if (dup == NULL)
 return (NULL);
 
+if (s1 != NULL)
 for (i = 0; i < count1 ; i++)
 dup[i] = s1[i];
 
