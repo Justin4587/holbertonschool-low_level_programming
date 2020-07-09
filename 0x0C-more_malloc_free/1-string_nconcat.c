@@ -29,7 +29,7 @@ count1++;
 while (s2[count2] != '\0')
 count2++;
 
-dup = malloc(sizeof(char) * (count1 + count2 + 1));
+dup = malloc(sizeof(char) * (count1 + n +  1));
 
 if (dup == NULL)
 return (NULL);
