@@ -17,7 +17,7 @@ char *dup;
 if (s1 != NULL)
 while (s1[count1] != '\0')
 count1++;
-dup = malloc(((sizeof(char) * count1) +(sizeof(char) * n) + 1));
+dup = malloc((sizeof(char)) * ((count1 + n) + 1));
 if (dup == NULL)
 {
 free(dup);
