@@ -1,4 +1,5 @@
 #include "holberton.h"
+
 /**
 * string_nconcat - concat
 * description: append array
@@ -7,34 +8,29 @@
 * @n: uns int
 * Return: value of error
 */
+
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 unsigned int count1 = 0, count2 = 0;
-unsigned int i, j;
 char *dup;
-if (s1 == NULL)
-s1 = "";
-if (s2 == NULL)
-s2 = "";
+
+if (s1 != NULL)
 while (s1[count1] != '\0')
 count1++;
-while (s2[count2] != '\0')
-count2++;
-if (count2 <= n)
-dup = malloc((sizeof(char)) * (count1 + count2 + 1));
-if (count2 > n)
-dup = malloc((sizeof(char)) * (count1 + n + 1));
+dup = malloc(((sizeof(char) * count1) +(sizeof(char) * n) + 1));
 if (dup == NULL)
-return (NULL);
-for (i = 0; i < count1 ; i++)
-dup[i] = s1[i];
-if (count2 < n)
 {
-for (j = 0; j <= count2 ; j++)
-dup[j + i] = s2[j];
+free(dup);
+return (NULL);
 }
-if (count2 >= n)
-for (j = 0; j <= n - 1 ; j++)
-dup[j + i] = s2[j];
+if (s1 != NULL)
+for (count1 = 0; s1[count1] != '\0'; count1++)
+dup[count1] = '\0';
+if (s2 != NULL)
+for (count2 = 0; count2 < n; count2++)
+{dup[count1] = s2[count2];
+count1++;
+}
+dup[count1] = '\0';
 return (dup);
 }
