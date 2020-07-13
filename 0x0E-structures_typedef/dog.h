@@ -3,7 +3,7 @@
 
 
 /**
-* dog - print compile file
+* struct dog - print compile file
 * description: dog stuff
 */
 
