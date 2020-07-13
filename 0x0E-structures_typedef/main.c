@@ -1,6 +1,5 @@
-#include "holberton.h"
 #include <stdio.h>
-#include <stdlib.h>
+#include "dog.h"
 
 /**
  * main - check the code for Holberton School students.
@@ -9,10 +8,11 @@
  */
 int main(void)
 {
-    char *concat;
+    struct dog my_dog;
 
-    concat = string_nconcat("Holberton ", "School !!!", 6);
-    printf("%s\n", concat);
-    free(concat);
+    my_dog.name = "Django";
+    my_dog.age = 3.5;
+    my_dog.owner = "Jay";
+    printf("My name is %s, and I am %.1f :) - Woof!\n", my_dog.name, my_dog.age);
     return (0);
 }
