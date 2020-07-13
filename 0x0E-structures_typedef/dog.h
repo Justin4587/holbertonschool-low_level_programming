@@ -5,6 +5,9 @@
 /**
 * struct dog - print compile file
 * description: dog stuff
+* @name: name of pet
+* @age: age
+* @owner: name of owner
 */
 
 struct dog
