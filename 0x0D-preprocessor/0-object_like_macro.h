@@ -1,6 +1,6 @@
 #ifndef MACRO_H
-#define DOG_H
+#define MACRO_H
 
 #define SIZE 1024
 
-#endif /* DOG_H */
+#endif /* MACRO_H */
