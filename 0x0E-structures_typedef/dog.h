@@ -3,7 +3,7 @@
 
 #include "holberton.h"
 
-void init_dog(struct dog *d, char *name, float age, char *owner);
+
 
 /**
 * struct dog - print compile file
@@ -20,5 +20,7 @@ float age;
 char *owner;
 };
 
+
+void init_dog(struct dog *d, char *name, float age, char *owner);
 
 #endif /* DOG_H */
