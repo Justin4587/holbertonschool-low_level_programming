@@ -2,9 +2,7 @@
 #define DOG_H
 
 
-
 #include "holberton.h"
-
 
 
 /**
