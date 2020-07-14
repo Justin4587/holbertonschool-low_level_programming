@@ -20,18 +20,21 @@ dog_t *d;
 d = malloc(sizeof(dog_t));
 if (d == NULL)
 {
+free(d);
 return (NULL);
 }
 for (n = 0; name[n]; n++)
 d->name = malloc(sizeof(char) * n + 1);
 if (d->name == NULL)
 {
+free(d);
 return (NULL);
 }
 for (o = 0; owner[o]; o++)
 d->owner = malloc(sizeof(char) * o + 1);
 if (d->owner == NULL)
 {
+free(d);
 return (NULL);
 }
 for (n = 0; name[n]; n++)
