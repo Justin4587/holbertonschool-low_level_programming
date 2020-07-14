@@ -36,6 +36,7 @@ d->owner = malloc(sizeof(char) * o + 1);
 if (d->owner == NULL)
 {
 free(d->owner);
+free(d->name);
 free(d);
 return (NULL);
 }
