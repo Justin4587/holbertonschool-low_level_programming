@@ -24,6 +24,7 @@ free(d);
 return (NULL);
 }
 for (n = 0; name[n]; n++)
+;
 d->name = malloc(n + 1);
 if (d->name == NULL)
 {
@@ -32,6 +33,7 @@ free(d);
 return (NULL);
 }
 for (o = 0; owner[o]; o++)
+;
 d->owner = malloc(o + 1);
 if (d->owner == NULL)
 {
