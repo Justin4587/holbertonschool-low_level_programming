@@ -6,13 +6,14 @@
 * description: print num
 * @action: print
 * @array: array
+* @size: pnt
 * Return: void
 */
 
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
 unsigned int i;
- size_t *pnt = &size;
+size_t *pnt = &size;
 
 
 if (array == NULL)
