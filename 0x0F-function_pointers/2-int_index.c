@@ -16,21 +16,21 @@ int i = 0;
 
 if (size <= 0)
 {
-return(-1);
+return (-1);
 }
 if (array == NULL)
 {
-return(-1);
+return (-1);
 }
 if (cmp == NULL)
 {
-return(-1);
+return (-1);
 }
 while (i < size)
 {
 if (cmp(array[i]) != 0)
 {
-return(i);
+return (i);
 }
 i++;
 }
