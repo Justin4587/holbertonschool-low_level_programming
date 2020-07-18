@@ -18,7 +18,7 @@ va_list argpnt;
 unsigned int i;
 char *s;
 
-va_start (argpnt, n);
+va_start(argpnt, n);
 
 if (n == 0)
 {
@@ -26,14 +26,18 @@ return;
 }
 
 else
-  for (i = 0; i < n ; i++)
+for (i = 0; i < n ; i++)
 {
-  s = va_arg(argpnt, char *);
-  printf("%s", s);
-  if (i < n - 1)
-  printf("%s", separator);
+s = va_arg(argpnt, char *);
+if (s[0] == '\0')
+{
+printf("(nil)");
 }
- putchar('\n');
-va_end (argpnt);
- return;
+printf("%s", s);
+if (i < n - 1)
+printf("%s", separator);
+}
+putchar('\n');
+va_end(argpnt);
+return;
 }

@@ -15,8 +15,8 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 {
 va_list argpnt;
 unsigned int i;
-int j; 
-va_start (argpnt, n);
+int j;
+va_start(argpnt, n);
 
 if (n == 0)
 {
@@ -24,14 +24,14 @@ return;
 }
 
 else
-  for (i = 0; i < n ; i++)
+for (i = 0; i < n ; i++)
 {
-  j = va_arg(argpnt, int);
-  printf("%d", j);
-  if (i < n - 1)
-  printf("%s", separator);
+j = va_arg(argpnt, int);
+printf("%d", j);
+if (i < n - 1)
+printf("%s", separator);
 }
- putchar('\n');
-va_end (argpnt);
- return;
+putchar('\n');
+va_end(argpnt);
+return;
 }
