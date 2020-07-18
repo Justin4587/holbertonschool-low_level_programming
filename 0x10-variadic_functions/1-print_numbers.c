@@ -18,7 +18,7 @@ unsigned int i;
 int j;
 va_start(argpnt, n);
 
-if (n == 0)
+if (n == 0 || separator[0] == '\0')
 {
 return;
 }
