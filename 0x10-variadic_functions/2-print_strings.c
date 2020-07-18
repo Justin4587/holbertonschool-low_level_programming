@@ -39,5 +39,4 @@ printf("%s", separator);
 }
 putchar('\n');
 va_end(argpnt);
-return;
 }
