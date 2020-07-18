@@ -20,7 +20,7 @@ char *s;
 
 va_start(argpnt, n);
 
-if (n == 0)
+if (separator[0] == '\0')
 {
 return;
 }
