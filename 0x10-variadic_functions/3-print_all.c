@@ -19,7 +19,9 @@ char f;
 char *s;
 va_start(argpnt, format);
 
-while (format[i] != '\0' && format != NULL)
+
+
+while (format != NULL && format[i] != '\0')
 {
 f = format[i];
 switch (f)
