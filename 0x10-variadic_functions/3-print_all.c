@@ -37,8 +37,9 @@ case 's':
 s = va_arg(argpnt, char *);
 if (s == NULL)
 {
-printf("(nil)");
+s = "(nil)";
 }
+
 printf("%s", s);
 break;
 default:
