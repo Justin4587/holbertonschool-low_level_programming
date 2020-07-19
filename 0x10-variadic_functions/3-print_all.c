@@ -19,8 +19,6 @@ char f;
 char *s;
 va_start(argpnt, format);
 
-
-
 while (format != NULL && format[i] != '\0')
 {
 f = format[i];
@@ -41,7 +39,6 @@ if (s == NULL)
 {
 s = "(nil)";
 }
-
 printf("%s", s);
 break;
 default:
