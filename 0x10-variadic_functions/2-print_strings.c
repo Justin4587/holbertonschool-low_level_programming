@@ -25,7 +25,7 @@ va_start(argpnt, n);
 while (i < n)
 {
 s = va_arg(argpnt, char *);
-if (s[0] == '\0')
+if (s == NULL)
 {
 printf("(nil)");
 }
