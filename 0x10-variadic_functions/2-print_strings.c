@@ -20,7 +20,7 @@ char *s;
 
 va_start(argpnt, n);
 
-if (separator[0] == '\0')
+if (n == 0 || separator[0] == '\0')
 {
 return;
 }
@@ -39,4 +39,5 @@ printf("%s", separator);
 }
 putchar('\n');
 va_end(argpnt);
+return;
 }
