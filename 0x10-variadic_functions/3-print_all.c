@@ -48,7 +48,7 @@ if (format[i + 1] != '\0' && (f == 'c' || f == 'f' || f == 'i' || f == 's'))
 printf(", ");
 i++;
 }
-putchar('\n');
+printf("\n");
 va_end(argpnt);
 return;
 }
