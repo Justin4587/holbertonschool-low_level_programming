@@ -25,10 +25,14 @@ va_start(argpnt, n);
 while (i < n)
 {
 s = va_arg(argpnt, char *);
+
+
 if (s == NULL)
 {
 printf("(nil)");
 }
+
+else
 printf("%s", s);
 if (i < n - 1 && separator != NULL)
 printf("%s", separator);
