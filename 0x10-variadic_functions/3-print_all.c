@@ -35,7 +35,7 @@ printf("%f", va_arg(argpnt, double));
 break;
 case 's':
 s = va_arg(argpnt, char *);
-if (s[0] == '\0')
+if (s == NULL)
 {
 printf("(nil)");
 }
