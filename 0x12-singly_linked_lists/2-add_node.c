@@ -26,6 +26,7 @@ while(str[i] != NULL)
 i++;
 }
 temp->len = i;
+temp->next = *head
 *head = temp;
 return (temp);
 }
