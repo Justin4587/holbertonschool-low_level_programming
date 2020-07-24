@@ -17,9 +17,9 @@ unsigned int i;
 
  while(h != NULL)
    {
-     if (str == NULL)
+     if (h->str == NULL)
        {
-       printf("[0] (nil)/n");
+       printf("[0] (nil)\n");
        }
      else
        {
