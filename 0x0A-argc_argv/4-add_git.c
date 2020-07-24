@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
 
 /**
 * main - prints name of prog
@@ -10,15 +9,18 @@
 * Return: 0
 */
 
-int main(int ac, char **av)
+int main(int argc, char **argv)
 {
-int a;
-int b;
-int i;
+  int a;
+  int b;
 
-      b = atoi(*av++);
-     a = a + b;
-  
- printf ("%d\n", a);
- return (1);
+while (argc--)
+  {
+    b = atoi(*argv++);
+    a = a + b;
+  }
+ {
+   printf ("%d\n", a);
+   }
+return (0);
 }

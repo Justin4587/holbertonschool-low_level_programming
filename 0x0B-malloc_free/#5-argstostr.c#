@@ -1,0 +1,49 @@
+char *argstostr(int ac, char **av)
+{
+char *dup;
+ unsigned int i, j;
+
+
+
+
+
+
+
+
+if (ac == 0)
+  return (NULL);
+
+
+ while (i++ < ac; acn--)
+   {
+     while (*av++)
+      av[acn] != '\0)
+      smain++; 
+
+
+
+
+
+dup = malloc(sizeof(
+
+
+
+
+
+dup = malloc(sizeof(char) * (count1 + count2 + 1));
+
+if (dup == NULL)
+return (NULL);
+
+for (i = 0; i < count1 ; i++)
+dup[i] = s1[i];
+
+for (j = 0; j <= count2 ; j++)
+dup[j + i] = s2[j];
+
+return (dup);
+}
+
+
+
+
