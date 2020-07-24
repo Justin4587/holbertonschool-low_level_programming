@@ -18,13 +18,13 @@ unsigned int i = 0;
 
 new_end = malloc(sizeof(list_t));
 
-if(new_end == NULL)
+if (new_end == NULL)
 {
-return(NULL);
+return (NULL);
 }
 new_end->str = strdup(str);
 
-while(str[i] != '\0')
+while (str[i] != '\0')
 {
 i++;
 }
