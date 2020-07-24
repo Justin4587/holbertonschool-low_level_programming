@@ -20,11 +20,11 @@ if(temp == NULL)
 {
 return(NULL);
 }
+temp->str = strdup(str);
 while(str[i] != NULL)
 {
 i++;
 }
-temp->str = strdup(str);
 temp->len = i;
 *head = temp;
 return (temp);
