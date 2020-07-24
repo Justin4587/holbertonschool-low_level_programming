@@ -4,7 +4,7 @@
 #include <stdio.h>
 
 /**
-* add_node - function
+* add_node_end - function
 * description: print
 * @h: lists
 * Return: size
