@@ -21,7 +21,7 @@ if(temp == NULL)
 return(NULL);
 }
 temp->str = strdup(str);
-while(str[i] != NULL)
+while(str[i] != '\0')
 {
 i++;
 }
