@@ -4,7 +4,7 @@
 #include <stdio.h>
 
 /**
-* print_list - function
+* list_len - function
 * description: print
 * @h: lists
 * Return: size
