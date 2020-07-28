@@ -4,10 +4,10 @@
 #include <stdio.h>
 
 /**
-* add_node_end - function
+* add_nodeint_end - function
 * description: print
 * @head: lists
-* @str: string
+* @n: string
 * Return: size
 */
 
