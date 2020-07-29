@@ -22,6 +22,7 @@ while (pnt != NULL)
 pntr = pnt->next;
 free(pnt);
 pnt = pntr;
-}
 *head = NULL;
+}
+return;
 }
