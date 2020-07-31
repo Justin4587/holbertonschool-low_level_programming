@@ -13,17 +13,16 @@
 
 int clear_bit(unsigned long int *n, unsigned int index)
 {
-  int status;  
+int status;
 
-  if (index > 63)
-    {
-      return (-1);
-    }
-
-  status = 1 << index;
-  *n = *n &(~status);
-
-
-  return (1);
+if (index > 63)
+{
+return (-1);
 }
- 
+
+status = 1 << index;
+*n = *n & (~status);
+
+
+return (1);
+}

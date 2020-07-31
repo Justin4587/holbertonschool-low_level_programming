@@ -13,17 +13,14 @@
 
 int get_bit(unsigned long int n, unsigned int index)
 {
-  int status;  
+int status;
 
-  if (index > 63)
-    {
-      return (-1);
-    }
-
-  status = (n >> index) & 1;
-
-
-
-  return (status);
+if (index > 63)
+{
+return (-1);
 }
- 
+
+status = (n >> index) & 1;
+
+return (status);
+}
