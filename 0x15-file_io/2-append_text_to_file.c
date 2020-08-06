@@ -4,20 +4,20 @@
 #include <stdio.h>
 
 /**
-* create_file - function
+* append_text_to_file - function
 * description: print
 * @filename: lists
 * @text_content: IDK
 * Return: size
 */
 
-int create_file(const char *filename, char *text_content)
+int append_text_to_file(const char *filename, char *text_content)
 {
 int f;
 int c;
 int num = 0;
 
-f = open(filename, O_CREAT | O_TRUNC | O_WRONLY, 0600);
+f = open(filename, O_APPEND | O_RDWR);
 
 if (filename == NULL || f == -1)
 {
