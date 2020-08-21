@@ -8,16 +8,21 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	int i, j = 0;
+	char *temp;
+	int n, i = 0, j = 0;
 
-    j = _strlen(dest);
-	
-    for (i = 0; i != '\0'; i++, j++)
-    dest[j] = src[i];
+	while (dest[i] != '\0')
+		i++;
 
+	j = _strlen(src);
 
-	dest[j++] = '\0';
-	return (dest);
+	temp = malloc(sizeof(char) * (i + j) + 1);
+	for (n = 0; dest[n] != '\0'; n++)
+		temp[n] = dest[n];
+	for (j = 0; src[j] != '\0'; n++, j++)
+		temp[n] = src[j];
+	temp[n] = '\0';
+	return (temp);
 }
 /**
  * _strlen - gets length of a string
