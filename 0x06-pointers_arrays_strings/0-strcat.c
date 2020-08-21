@@ -22,7 +22,8 @@ char *_strcat(char *dest, char *src)
 	for (j = 0; src[j] != '\0'; n++, j++)
 		temp[n] = src[j];
 	temp[n] = '\0';
-	return (temp);
+    dest = temp;
+	return (dest);
 }
 /**
  * _strlen - gets length of a string
