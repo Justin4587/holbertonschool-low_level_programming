@@ -11,7 +11,7 @@ int i, j;
 char str[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 char ptr[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
-for (i = 0; str[i] != '\0'; i++)
+for (i = 0; s[i] != '\0'; i++)
 {
 for (j = 0; str[j] != '\0'; j++)
 {
