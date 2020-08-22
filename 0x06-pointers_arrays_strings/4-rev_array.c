@@ -10,16 +10,16 @@
 
 void reverse_array(int *a, int n)
 {
-    int store[1024], i, k;
+int store, i, j;
 
-k = n;
+j = n - 1;
 
-    for (i = 0; i < n; i++, k--)
-    store[i] = a[k];
+for (i = 0; i < j; i++, j--)
+{
+store = a[i];
+a[i] = a[j];
+a[j] = store;
+}
 
-    for (i = 0; i < n; i++)
-    store[i] = a[i];
-
-
-    return;
+return;
 }
