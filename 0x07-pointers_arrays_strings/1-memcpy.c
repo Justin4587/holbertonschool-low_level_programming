@@ -5,6 +5,7 @@
 * description: take a value and write to buffer n times
 * @dest: location being appended
 * @src: location to pull from
+* @n: int
 * Return: pointer *dest
 */
 
