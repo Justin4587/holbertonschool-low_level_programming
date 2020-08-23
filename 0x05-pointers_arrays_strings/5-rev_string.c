@@ -11,6 +11,8 @@ void rev_string(char *s)
 int i = 0, k;
 char temp;
 
+if (s == NULL)
+return;
 k = _strlen(s);
 k = k - 1;
 
