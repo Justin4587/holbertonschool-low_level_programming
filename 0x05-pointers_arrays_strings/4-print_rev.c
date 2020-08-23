@@ -1,22 +1,22 @@
 #include "holberton.h"
 
 /**
-* _puts - entry point
-* @str: chars
+* print_rev - entry point
+* @s: chars
 * Return: void
 */
 
-void print_rev(char *str)
+void print_rev(char *s)
 {
 int i, j;
 
-j = _strlen(str);
-i = j - 1;
+j = _strlen(s);
+i = j;
 
-while (i != 0)
+while (i != '\0')
 {
-    _putchar(str[i]);
-    i--;
+i--;
+_putchar(s[i]);
 }
 _putchar('\n');
 }
