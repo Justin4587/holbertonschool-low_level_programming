@@ -18,24 +18,23 @@ char *_strstr(char *haystack, char *needle)
     {
         if (haystack[i] == needle[j])
         {
-            while (haystack[l] == needle[j])
+            while (haystack[i] == needle[j])
             {
                 if (j == k - 1)
                 {
                     k = i - j;
                     return ((char *) haystack + k);
                 }
-
-            l++;
             j++;
+            i++;
             }
-
         }
-
         i++;
     }
     return(0);
 }
+
+
 
 /**
  * _strlen - gets length of a string
