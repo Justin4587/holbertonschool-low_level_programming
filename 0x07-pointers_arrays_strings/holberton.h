@@ -7,6 +7,7 @@ char *_strchr(char *s, char c);
 unsigned int _strspn(char *s, char *accept);
 void print_chessboard(char (*a)[8]);
 int _putchar(char c);
+char *_strpbrk(char *s, char *accept);
 
 
 #endif
