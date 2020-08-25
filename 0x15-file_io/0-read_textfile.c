@@ -20,7 +20,7 @@ int num;
 
 f = open(filename, O_RDONLY, 0400);
 
-if (filename == NULL)
+if (filename == NULL || f == -1)
 {
 return (0);
 }
