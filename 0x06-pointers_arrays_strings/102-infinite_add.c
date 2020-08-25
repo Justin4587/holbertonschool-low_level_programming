@@ -28,14 +28,14 @@ for (k = l - 1; k >= 0; k--)
 i--;
 j--;
 if (i >= 0)
-m = n1[i] - 0;
+m = n1[i] - '0';
 else
 m = 0;
 if (j >= 0)
-n = n2[j] - 0;
+n = n2[j] - '0';
 else
 n = 0;
-r[k] = (m + n + o) % 10 + 0;
+r[k] = (m + n + o) % 10 + '0';
 o = (m + n + o) / 10;
 }
 if (o == 1)
@@ -45,7 +45,7 @@ if (l + 2 > size_r)
 return (0);
 while (l-- >= 0)
 r[l + 1] = r[l];
-r[0] = o + 0;
+r[0] = o + '0';
 }
 return (r);
 }
