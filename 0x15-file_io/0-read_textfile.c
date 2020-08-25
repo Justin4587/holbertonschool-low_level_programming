@@ -18,7 +18,7 @@ int f;
 int c;
 int num;
 
-f = open(filename, O_RDONLY);
+f = open(filename, O_RDONLY, 0400);
 
 if (filename == NULL)
 {
