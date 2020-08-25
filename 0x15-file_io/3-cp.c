@@ -22,7 +22,7 @@ dprintf(STDOUT_FILENO, "Usage: cp file_from file_to/n");
 return (97);
 }
 ff = open(av[1], O_RDONLY);
-ft = open(av[2], O_APPEND | O_CREAT | O_RDWR);
+ft = open(av[2], O_CREAT | O_TRUNC | O_WRONLY, 0664);
 if (ft == -1)
 {
 close(ff);
