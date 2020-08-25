@@ -34,10 +34,10 @@ while ((chars = read(ff, buffer, 1024)) > 0)
 if (chars == -1)
 abschar = write(ft, buffer, chars);
 if (abschar == -1)
-}
-
-
+{
 close(ff);
 close(ft);
 return (0);
+}
+}
 }
