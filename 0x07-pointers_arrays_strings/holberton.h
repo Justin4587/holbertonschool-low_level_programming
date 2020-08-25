@@ -10,4 +10,5 @@ int _putchar(char c);
 char *_strpbrk(char *s, char *accept);
 int _strlen(char *str);
 char *_strstr(char *haystack, char *needle);
+void set_string(char **s, char *to);
 #endif
