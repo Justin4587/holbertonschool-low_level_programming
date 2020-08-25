@@ -14,31 +14,43 @@
 int main(int ac, char **av)
 {
 char buffer[1024];
-int ff;
-int ft;
-int chars;
-int abschar;
+int ff, ft, chars, abschar;
 
 if (ac != 3)
 {
 dprintf(STDOUT_FILENO, "Usage: cp file_from file_to/n");
 return (97);
 }
-
 ff = open(av[1], O_RDONLY);
-
 ft = open(av[2], O_APPEND | O_CREAT | O_RDWR);
-
+if (ft == -1)
+{
+close(ff);
+close(ft);
+dprintf(2, "Error: Can't read from file %s", av[1]);
+return (98);
+}
 while ((chars = read(ff, buffer, 1024)) > 0)
 {
-if (chars == -1)
-abschar = write(ft, buffer, chars);
+abschar = write(ff, buffer, chars);
 if (abschar == -1)
 {
 close(ff);
 close(ft);
-return (0);
+dprintf(2, "Error: Can't write to %s", av[2]);
+return (99);
+}}
+chars = close(ff);
+if (chars == -1)
+{
+dprintf(2, "Error: Can't close fd %s", av[1]);
+return (100);
 }
+abschar = close(ft);
+if (abschar == -1)
+{
+dprintf(2, "Error: Can't close fd %s", av[2]);
+return (100);
 }
 return (0);
 }
