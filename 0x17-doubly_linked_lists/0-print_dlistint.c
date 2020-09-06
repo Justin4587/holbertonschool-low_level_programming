@@ -14,19 +14,15 @@ size_t print_dlistint(const dlistint_t *h)
 {
 unsigned int i = 0;
 
+if (h == NULL)
+    return i;
 
 while (h != NULL)
-{
-if (h->n == '\0')
-{
+{   
+    printf("%d\n", h->n);
+    h = h->next;
+    i++;
+}
 
-}
-else
-{
-printf("%d\n", h->n);
-}
-h = h->next;
-i++;
-}
 return (i);
 }
