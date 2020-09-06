@@ -27,7 +27,7 @@ return (NULL);
 for (i = 0; i < idx - 1; i++)
 {
 node_before = node_before->next;
-if (node_before == NULL && i + 1 < idx)
+if (node_before == NULL)
 return (NULL);
 }
 node_after = node_before->next;
