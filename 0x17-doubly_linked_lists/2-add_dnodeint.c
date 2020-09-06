@@ -23,8 +23,13 @@ if (temp == NULL)
 {
 return (NULL);
 }
+
 temp->n = n;
+
+
 temp->next = *head;
+temp->prev = NULL;
+
 *head = temp;
 return (temp);
 }
