@@ -29,7 +29,10 @@ temp->n = n;
 
 temp->next = *head;
 temp->prev = NULL;
-
+if (*head != NULL)
+{
+(*head)->prev = temp;
+}
 *head = temp;
 return (temp);
 }
