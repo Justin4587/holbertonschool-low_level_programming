@@ -26,20 +26,18 @@ if (node == NULL)
 return (NULL);
 for (i = 0; i < idx - 1; i++)
 {
-    temp = temp->next;
-    if (temp == NULL && i + 1 < idx)
-    return (NULL);
+temp = temp->next;
+if (temp == NULL && i + 1 < idx)
+return (NULL);
 }
-    after_node = temp->next;
-    temp->next = node;
-    node->prev = temp;
-    node->next = after_node;
+after_node = temp->next;
+temp->next = node;
+node->prev = temp;
+node->next = after_node;
 
-    if (after_node)
-    after_node->prev = node;
-    
-    
-    
+if (after_node)
+after_node->prev = node;
+
 
 return (node);
 }
