@@ -35,6 +35,9 @@ for (i = 0; i < idx - 1; i++)
     node->prev = temp;
     node->next = after_node;
 
+    if (after_node)
+    after_node->prev = node;
+    
     
     
 
