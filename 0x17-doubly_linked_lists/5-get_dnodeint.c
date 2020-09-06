@@ -20,5 +20,8 @@ while (counter < index)
 head = head->next;
 counter++;
 }
+if (head == NULL)
+return (NULL);
+else
 return (head);
 }
