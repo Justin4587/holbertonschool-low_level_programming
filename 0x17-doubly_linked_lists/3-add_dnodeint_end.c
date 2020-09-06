@@ -24,10 +24,11 @@ return (NULL);
 new_end->n = n;
 
 new_end->next = NULL;
-
 if (*head == NULL)
+{
 *head = new_end;
-
+new_end->prev = NULL;
+}
 else
 {
     tail = *head;
@@ -37,6 +38,7 @@ else
         tail = tail->next;
     }
     tail->next = new_end;
+    
 }
 
 return (new_end);
