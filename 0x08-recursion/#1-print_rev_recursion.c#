@@ -1,0 +1,15 @@
+
+
+void strcpy (src, dest)
+{
+  int len;
+  int count = 0;
+  strlen(src) = len;
+  while(src[count])
+    {
+  dest[count] = src[count];
+  count++;
+    }
+  dest[len + 1] = '\0';
+  return(dest);
+}
