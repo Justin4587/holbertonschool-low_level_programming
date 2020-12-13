@@ -1,0 +1,1 @@
+This is a README for doubly linked lists using c which I hate now. 
