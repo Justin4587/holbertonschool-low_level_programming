@@ -19,5 +19,6 @@ cnt++;
 }
 if (head == NULL)
 return (NULL);
+else
 return (head);
 }
