@@ -3,7 +3,7 @@
 /**
  * add_dnodeint - traverses linked list
  * description: prints ints in list
- * @h: list
+ * @n: list
  * @head: head of list
  * Return: size of list
  */
