@@ -18,12 +18,13 @@ return (head);
 
 node = head;
 
-while (index)
+while (cnt < index)
 {
-if (cnt == index)
-return (node);
 cnt++;
 node = node->next;
 }
+if (cnt == index)
+return (node);
+else
 return (NULL);
 }
