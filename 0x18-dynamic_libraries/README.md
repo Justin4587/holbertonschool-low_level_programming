@@ -1,0 +1,1 @@
+This is a README for 0x18 dynamic libraries. I'm not sure why but I think I remember hating this project. Lets find out. 
