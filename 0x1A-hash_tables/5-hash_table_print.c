@@ -20,7 +20,6 @@ void hash_table_print(const hash_table_t *ht)
 
 	printf("{");
 	temp = ht->array[i];
-	printf("do we get here");
 
 	while (i < ht->size)
 	{
