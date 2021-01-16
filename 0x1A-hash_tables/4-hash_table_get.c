@@ -1,7 +1,7 @@
 #include "hash_tables.h"
 #include "string.h"
 /**
- * hash_table_ - implementation of the djb2 algorithm
+ * hash_table_get - implementation of the djb2 algorithm
  * @ht: string used to generate hash value
  * @key: um size
  *
