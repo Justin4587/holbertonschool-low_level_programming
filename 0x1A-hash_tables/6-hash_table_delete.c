@@ -24,7 +24,6 @@ void hash_table_delete(hash_table_t *ht)
 			free(temptemp->key);
 			free(temptemp->value);
 			free(temptemp);
-			free(temp);
 			temptemp = temp;
 		}
 		i = i + 1;
