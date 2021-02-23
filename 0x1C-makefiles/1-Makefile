@@ -3,4 +3,4 @@ SRC = main.c holberton.c
 
 
 all: $(SRC)
-	$(CC) $(SRC) -o $(NAME)
+	$(CC) $(SRC) -o holberton
